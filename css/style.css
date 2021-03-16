@@ -1,0 +1,188 @@
+header {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header h2 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: visible;
+    overflow-y: hidden;
+}
+
+#content {
+    margin: 0;
+    padding: 0;
+}
+
+#addNewProjectOverlay {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#addNewTaskOverlay {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.centerAlignListContent {
+    text-align: center;
+}
+
+#addNewProject {
+    z-index: 2;
+    width: 300px;
+    background-color: white;
+    text-align: center;
+}
+
+#addNewProjectForm {
+    text-align: center;
+}
+
+#addNewProjectForm label {
+    margin-top: 10px;
+}
+
+#addNewProjectForm input {
+    margin-bottom: 10px;
+}
+
+#addNewTask {
+    z-index: 2;
+    width: 300px;
+    background-color: white;
+    text-align: center;
+}
+
+#addNewTaskForm {
+    text-align: center;
+}
+
+#addNewTaskForm label {
+    margin-top: 10px;
+}
+
+#addNewTaskForm input {
+    margin-bottom: 10px;
+}
+
+#addNewTaskForm select {
+    margin-bottom: 10px;
+}
+
+#contentListsDiv {
+    margin: 0;
+    padding: 0;
+}
+
+#projectListDiv {
+    display: inline-block;
+    background-color: gray;
+    min-height: calc(100% - 60px);
+    overflow: hidden;
+    min-width: 30vw;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#showNewProjectForm {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+#projectListDiv h2 {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#projectListDiv ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#projectListDiv li {
+    margin: 1vw;
+    margin-bottom: 10px;
+    padding: 0;
+    border: 1px solid black;
+}
+
+#projectListDiv button {
+    margin: 0;
+    padding: 0;
+}
+
+#taskListDiv {
+    display: inline-block;
+    background-color: silver;
+    min-height: calc(100% - 60px);
+    overflow: hidden;
+    min-width: 70vw;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 30vw;
+}
+
+#showNewTaskForm {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+#taskListDiv h2 {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#taskListDiv ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#taskListDiv li {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+    margin-bottom: 10px;
+    padding: 0;
+    border: 1px solid black;
+}
+
+#taskListDiv p {
+    display: inline;
+}
