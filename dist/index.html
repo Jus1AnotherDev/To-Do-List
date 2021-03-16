@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>To-Do List</title>
+    <meta name="description" content="To-Do List">
+    <meta name="author" content="Nitin M.">
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>To-Do List</h1>
+    </header>
+
+    <div id="content">
+
+      <div id="addNewProjectOverlay">
+        <div id="addNewProject">
+          <form id="addNewProjectForm">
+            <h2>Add New Project</h2>
+            <label>Project Title:
+              <br>
+              <input type="text" id="newProjectTitle" required>
+            </label>
+            <br>
+            <input type="button" id="createNewProjectSubmit" value="Submit">
+          </form>
+        </div>
+      </div>
+
+      <div id="addNewTaskOverlay">
+        <div id="addNewTask">
+          <form id="addNewTaskForm">
+            <h2>Add New Task</h2>
+            <label>Task Title:
+              <br>
+              <input type="text" id="newTaskTitle" required>
+            </label>
+            <br>
+            <label>Description:
+              <br>
+              <input type="text" id="newTaskDescription" required>
+            </label>
+            <br>
+            <label>Due Date:
+              <br>
+              <input type="date" id="newTaskDate" required>
+            </label>
+            <br>
+            <label>Priority:
+              <br>
+              <select id="newTaskPriority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+              </select>
+            </label>
+            <br>
+            <input type="button" id="createNewTaskSubmit" value="Submit">
+          </form>
+        </div>
+      </div>
+
+      <div id="contentListsDiv">
+
+        <div id="projectListDiv">
+          <div class="centerAlignListContent">
+            <input type="button" id="showNewProjectForm" value="Add New Project">
+            <h2>Projects</h2>
+          </div>
+          <ul id="projectList">
+          </ul>
+        </div>
+  
+        <div id="taskListDiv">
+          <div class="centerAlignListContent">
+            <input type="button" id="showNewTaskForm" value="Add New Task">
+            <h2>Tasks</h2>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    <script src="main.js">
+    </script>
+  </body>
+</html>
